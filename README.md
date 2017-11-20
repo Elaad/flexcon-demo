@@ -1,6 +1,6 @@
 # Instructions OCPP demo
 
-1.	**Clone or download the frontend from https://github.com/Elaad/flexcon-demo.** This webtool allows you to read and send OCPP messages to a charging station.
+1.	**Clone or download this repository.** This webtool allows you to read and send OCPP messages to a charging station. Open the index.html in your favorite browser.
 
 2.	**Enter the websocket url in the textfield on top: 192.168.10.2:8080 and press ‘Connect’.** A websocket connection will be opened with the OCPP server of the Charge Point Operator (CPO).
 
