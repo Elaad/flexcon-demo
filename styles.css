@@ -1,0 +1,61 @@
+.main_content {
+    width: initial;
+    max-width: 60%;
+}
+
+.code_messages {
+    font-family: "Courier New", sans-serif;
+    font-size: 9pt;
+    white-space: nowrap;
+    overflow: auto;
+    padding: 5px;
+}
+
+#display {
+    height: 400px;
+    background: black;
+    color: white;
+    border: solid gray 1px;
+}
+
+#ta_message {
+    font-size: 12pt;
+}
+
+#display .error {
+    color: red;
+}
+
+select,
+option,
+.btn {
+    cursor: pointer;
+}
+
+.btn.disabled,
+.btn:disabled {
+    opacity: 0.35;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+    color: #868e96;
+}
+
+:disabled {
+    cursor: not-allowed;
+}
+
+@media (max-width: 1200px) {
+    .main_content {
+        width: initial;
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 800px) {
+    .main_content {
+        width: initial;
+        max-width: 100%;
+    }
+}

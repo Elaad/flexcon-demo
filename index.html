@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery-3.2.1/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap-4.0.0-beta.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="ocpp_messages.js"></script>
+    <script type="text/javascript" src="control.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-beta.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-beta.2-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-beta.2-dist/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>OCPP CPO Client</title>
+</head>
+<body>
+    <div class="d-flex justify-content-center">
+        <div class="main_content col p-2">
+            <div class="d-flex justify-content-center">
+                <div class="col pr-2">
+                    <div class="form-group row input-group">
+                        <span class="input-group-addon" id="basic-addon3">http://</span>
+                        <input type="text" class="form-control" id="tf_hostaddress" value="192.168.10.2:8080" aria-describedby="basic-addon3">
+                    </div>
+                </div>
+                <div class="pl-0">
+                    <button id="btn_connect" type="submit" class="btn btn-primary">Connect</button>
+                </div>
+            </div>
+            <div id="display" class="code_messages"></div>
+            <textarea disabled class="code_messages form-control mt-2" rows="10" id="ta_message"></textarea>
+            <div class="d-flex justify-content-center">
+                <div class="col pr-2 pt-2 pl-0">
+                    <select disabled id="slct_charging_station" class="form-control">
+                        <option value="" selected>Select a charging station...</option>
+                    </select>
+                </div>
+                <div class="col p-2">
+                    <select disabled id="slct_occp_action" class="form-control">
+                        <option value="" selected>Select an action...</option>
+                        <option value="RemoteStartTransaction">Start transaction</option>
+                        <option value="RemoteStopTransaction">Stop transaction</option>
+                        <option value="SetChargingProfile">Set charging profile</option>
+                        <option value="UnlockConnector">Unlock connector</option>
+                    </select>
+                </div>
+                <div class="pl-2 pt-2 pr-0">
+                    <button disabled id="btn_send" type="submit" class="btn btn-primary float-right">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
